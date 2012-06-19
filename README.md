@@ -6,6 +6,8 @@ qqweibo oauth2代码来自: https://github.com/jinuljt/qqweibov2
 本代码只对两种微博进行了整合，设计了帐号模型进行保存授权信息。
 
 ##测试前需在settings.py内设定：
+
+```
 SINA_CONSUMER_KEY = ''
 SINA_CONSUMER_SECRET = ''
 SINA_CALLBACK = ''
@@ -13,6 +15,7 @@ SINA_CALLBACK = ''
 QQ_CONSUMER_KEY = ''
 QQ_CONSUMER_SECRET = ''
 QQ_CALLBACK = ''
+```
 
 ##授权地址及callback
  - ./manage.py syncdb
