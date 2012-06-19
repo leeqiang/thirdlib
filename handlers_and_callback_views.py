@@ -7,7 +7,7 @@ from account.utils import _auth
 
 
 def authenticate_handler(request,
-						   third='SINA'):
+	third='SINA'):
 	"""
 		对帐号oauth2进行授权
 	"""
@@ -18,9 +18,9 @@ def authenticate_handler(request,
 
 @login_required
 def oauth_callback(request,
-					third="SINA"):
+	third="SINA"):
 	"""
-		返回一个code
+		接收一个code
 		保存用户的access_token 和其他信息
 	"""
 	code = request.REQUEST.get('code')
