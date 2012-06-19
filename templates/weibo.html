@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>test weibo</title>
+	</head>
+	<!--
+		两种oauth认证
+	-->
+	<body>
+		<form action="https://api.weibo.com/2/statuses/update.json?access_token=2.00GW9gKBzWKNNB18accb8880hr9PoB" method="post">
+			<input type="hidden" name="source" value="1111363949" />
+			<input type="text" name="status" />
+			<input type="submit" value="submit" /> 
+		</form>
+
+		<form action="/post" method="post">
+			<input type="text" name="content" />
+			<input type="submit" value="submit" /> 
+		</form>
+	</body>
+</html>
